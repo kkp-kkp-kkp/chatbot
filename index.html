@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChatBot Docs</title>
+<title>chatbot docs</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -72,14 +72,14 @@
 <div class="container">
 
     <div class="card">
-        <div class="command">где</div>
+        <div class="command">где <code>nickname</code></div>
         <div>принимает до 7 никнеймов (через пробел) и показывает реалмы где находятся игроки.</div>
         <div class="alias">alias: gde, where, find</div>
         <div><code>где kkp_ kkp_events</code></div>
     </div>
 
     <div class="card">
-        <div class="command">инфо</div>
+        <div class="command">инфо <code>nickname</code></div>
         <div>
             показывает информацию о пользователе:<br>
             🧨 — дата регистрации<br>
@@ -91,19 +91,19 @@
     </div>
 
     <div class="card">
-        <div class="command">правило</div>
+        <div class="command">правило <code>пункт или текст</code> <code>vc|hub|gc</code> <code>варны</code></div>
         <div>
             поиск правила по пункту или тексту.<br>
             дополнительно:<br>
-            <code>vc</code>, <code>hub</code>, <code>gc</code> — тип чата<br>
-            <code>варны</code> — влияет на наказание
+            <code>vc</code>, <code>hub</code>, <code>gc</code> — тип чата, влияет на наказание<br>
+            <code>варны</code> — количество варнов, влияет на наказание (+50% к длительности за каждый варн)
         </div>
         <div class="alias">alias: rule, пункт, point</div>
         <div><code>правило 2.8.2 vc 10</code></div>
     </div>
 
     <div class="card">
-        <div class="command">рандом</div>
+        <div class="command">рандом <code>мин</code> <code>макс</code> <code>кол-во</code> <code>-у</code></div>
         <div>
             генерация случайных чисел:<br>
             мин, макс, количество<br>
@@ -114,7 +114,7 @@
     </div>
 
     <div class="card">
-        <div class="command">сао</div>
+        <div class="command">сао <code>sub|unsub</code> <code>тип</code></div>
         <div>
             подписка на уведомления о подземельях:<br>
             <code>саб</code> или <code>ансаб</code><br>
@@ -125,7 +125,7 @@
     </div>
 
     <div class="card">
-        <div class="command">хелп</div>
+        <div class="command">хелп <code>команда</code></div>
         <div>
             показывает помощь по конкретной команде
         </div>
