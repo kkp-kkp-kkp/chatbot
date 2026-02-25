@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatBot Docs</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: #1e293b;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: #1e293b;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .command {
+        font-size: 20px;
+        font-weight: bold;
+        color: #38bdf8;
+        margin-bottom: 10px;
+    }
+
+    .alias {
+        color: #94a3b8;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    code {
+        background: #0f172a;
+        padding: 3px 6px;
+        border-radius: 6px;
+        color: #facc15;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #64748b;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    📘 документация chatbot
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <div class="command">где</div>
+        <div>принимает до 7 никнеймов (через пробел) и показывает реалмы где находятся игроки.</div>
+        <div class="alias">alias: gde, where, find</div>
+        <div><code>где kkp_ kkp_events</code></div>
+    </div>
+
+    <div class="card">
+        <div class="command">инфо</div>
+        <div>
+            показывает информацию о пользователе:<br>
+            🧨 — дата регистрации<br>
+            🟢 — онлайн<br>
+            ⏱️ — общее время в игре
+        </div>
+        <div class="alias">alias: info, профиль, profile, get</div>
+        <div><code>инфо kkp_ kkp_events</code></div>
+    </div>
+
+    <div class="card">
+        <div class="command">правило</div>
+        <div>
+            поиск правила по пункту или тексту.<br>
+            дополнительно:<br>
+            <code>vc</code>, <code>hub</code>, <code>gc</code> — тип чата<br>
+            <code>варны</code> — влияет на наказание
+        </div>
+        <div class="alias">alias: rule, пункт, point</div>
+        <div><code>правило 2.8.2 vc 10</code></div>
+    </div>
+
+    <div class="card">
+        <div class="command">рандом</div>
+        <div>
+            генерация случайных чисел:<br>
+            мин, макс, количество<br>
+            <code>-у</code> — только уникальные значения
+        </div>
+        <div class="alias">alias: random, ранд, rand, randint</div>
+        <div><code>рандом 1 5 3 -у</code></div>
+    </div>
+
+    <div class="card">
+        <div class="command">сао</div>
+        <div>
+            подписка на уведомления о подземельях:<br>
+            <code>саб</code> или <code>ансаб</code><br>
+            типы: <code>лп</code>, <code>сп</code>, <code>слп</code>, <code>эп</code>
+        </div>
+        <div class="alias">alias: sao</div>
+        <div><code>сао саб лп</code></div>
+    </div>
+
+    <div class="card">
+        <div class="command">хелп</div>
+        <div>
+            показывает помощь по конкретной команде
+        </div>
+        <div class="alias">alias: help</div>
+        <div><code>хелп где</code></div>
+    </div>
+
+</div>
+
+<footer>
+    chatbot docs. • 2026
+</footer>
+
+</body>
+</html>
